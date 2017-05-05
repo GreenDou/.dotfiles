@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-nvm autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt inc_append_history
 unsetopt share_history
 
-export NVM_DIR="/Users/greendou/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="$HOME/.yarn/bin:$PATH:$HOME/.local/bin"
 
-export PATH="$HOME/.yarn/bin:$PATH"
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+export CMAKE_PREFIX_PATH=/home/greendou/Qt5.8.0/5.8/gcc_64
